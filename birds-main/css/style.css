@@ -1,0 +1,129 @@
+body {
+  background-image: url("../images/pigeon-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-color: #cccccc;
+  /*Apply the provided .jpg as the page background.
+  Centered
+  on-repeating
+  Cover entire viewport
+  Add a fallback background color of light gray (#DDDDDD).*/
+}
+
+h1 {
+  text-align: center;
+  line-height: 2;
+  font-family: "Syncopate", sans-serif;
+  /*Center the <h1> and double-space it using line-height.  
+  Apply the Syncopate using Google Fonts, with sans-serif as fallback. 
+  Here is a reading on Google fonts.*/
+}
+
+a {
+  font-size: 16px;
+  color: #C12258;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  /*Style all links:
+  16px size
+  dark red (#C12258, #B21F50, or #B92751 — choose one that passes WAVE contrast test)
+  wavy underline
+*/
+}
+
+p {
+  padding-top: 15px;
+}
+
+*:focus {
+  /*When any element is in focus,  remove the default box and add a 6px dashed 
+  border in #417243*/
+  outline: none;
+  border: 6px dashed #417243;
+}
+
+td {
+    text-align: center;
+    border-bottom: 2px solid #000000;
+    padding: 10px;
+    /*Table cells:
+    Centered text
+    2px black border on bottom only
+    10px padding*/
+}
+
+thead th {
+    min-width: 125px;
+    padding: 10px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #7e0820;
+    text-align: center;
+    /*Column headers:
+    At least 125px wide
+    10px padding
+    White uppercase text
+    Dark red background (#7e0820)
+    Text centered horizontally*/
+}
+
+tbody th {
+    border: 2px solid #000000;
+    border-top-width: 0px;
+    /*Row headers: consistent 2px border – apply only where the neighbor 
+    does not have a border already.*/
+}
+
+tr:nth-child(even) {
+    background-color: #D1D1D1;
+    /*Striped rows:
+    Even rows: gray background (#D1D1D1)
+    Odd rows: transparent
+    */
+}
+
+tr:nth-child(odd) {
+    background-color: transparent;
+}
+
+tr:hover {
+    background-color: rgba(126, 8, 32, 0.25);
+    /*Hover effect: entire row background changes to the same dark red, but with 
+    .25 opacity. (Hint, use Inspect Element)*/
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0px;/* required by the checkpoint */
+    margin: 0 auto;/* center the table when it's narrower */
+    border-right: 2px solid #000; /* 2px border on the RIGHT side of the table */
+    border-radius: 20px;
+
+    /*Change the border-spacing to 0px and add a 2px border to the righthand side 
+    of the table.
+
+    enter the table when narrower than the screen.
+
+    Apply 20px rounded corners to the outer border.
+    Use pseudoclasses to ensure only the outer cells are rounded, not all cells.
+    It’s acceptable if there’s white space between the border and table edges.*/
+}
+
+thead th:first-child {
+    border-top-left-radius: 20px;
+}
+
+thead th:last-child {
+    border-top-right-radius: 20px;
+}
+
+tbody tr:last-child th[scope="row"] {
+    border-bottom-left-radius: 20px;
+}
+
+/* BOTTOM-RIGHT corner (last data cell in the last body row) */
+tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 20px;
+}
+
