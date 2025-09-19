@@ -2,7 +2,7 @@ body {
     font-family: arial, verdana; 
     background-color: #000000; 
     color: #FFFFFF;
-    margin: 20px, 20px, 0, 20px;
+    margin: 20px 20px 0 20px;
 }
 
 h1 {
@@ -53,7 +53,8 @@ div {
     background-color: #FF0000;
     text-align: right;
     margin-left: 50px;
-    border: 0, 0, 5px, 2px;
+    border-bottom: 2px solid #FFFFFF;
+    border-left: 5px solid #FFFFFF;
     /*Background color is a hexadecimal value for red
     Text is aligned on the right side 
     A left margin of 50px;
@@ -64,7 +65,8 @@ div {
     background-color: #0000FF;
     text-align: left;
     margin-right: 50px;
-    border: 2px, 5px;
+    border-right: 5px solid #FFFFFF;
+    border-top: 2px solid #FFFFFF;
     /* The blue div class has the following styles
     Background color is a hex value for blue
     Text is aligned on the left side
@@ -80,7 +82,8 @@ div {
     background-color: #FFFF00;
     text-align: right;
     margin-left: 50px;
-    border: 0, 0, 2px, 5px;
+    border-bottom: 2px solid #FFFFFF; 
+    border-left: 5px solid #FFFFFF;
     /*Background color is a hexadecimal value for yellow 
     Text is aligned on the right side
     A left margin of 50px;
@@ -95,7 +98,8 @@ div {
     background-color: #008000;
     text-align: left;
     margin-right: 50px;
-    border: 2px, 5px;
+    border-right: 5px solid #FFFFFF;
+    border-top: 2px solid #FFFFFF;
     /*The background color is a hexadecimal value for green  (You must use #00EB00, #008500, or #00D800)
     Text is aligned on the left side
     A right margin of 50px;
